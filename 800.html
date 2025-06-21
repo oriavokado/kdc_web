@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<title>KDC web - 문학 800</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><a class="title" href="kdc_home.html">KDC web</a></h1>
+    <div id="grid">
+    <div id="dir">
+        <div id="list_title"><strong>분류표</strong></div>
+        <ul class="custom_list">
+        <li><a class="num" href="000.html">000</a></li>
+        <li><a class="num" href="100.html">100</a></li>
+        <li><a class="num" href="200.html">200</a></li>
+        <li><a class="num" href="300.html">300</a></li>
+        <li><a class="num" href="400.html">400</a></li>
+        <li><a class="num" href="500.html">500</a></li>
+        <li><a class="num" href="600.html">600</a></li>
+        <li><a class="num" href="700.html">700</a></li>
+        <li><a class="num" href="800.html"><strong>800</strong></a></li>
+        <li><a class="num" href="900.html">900</a></li>
+        </ul>
+        <div id="list_title"><strong>조기표</strong></div>
+        <ul class="custom_list">
+        <li><a class="num" href="jogi.html">조기표</a></li>
+        </ul>
+    </div>
+
+    <div id="contents">
+    <br>
+    <h2 class="first_title">분류표</h2>
+    <br>
+    <div class="inner_box">
+    <h2 >문학 800</h2>
+    <br>
+    <script>
+        var i=1;
+        var name_list=['한국문학', '중국문학', '일본문학', '영미문학', '독일문학', '프랑스문학', '스페인 및 포르투갈문학', '이탈리아문학', '기타 제문학']
+        while (i<=name_list.length) {
+            document.write('<p class="contents_list">',8,i*10," ", name_list[i-1], '</p>');
+            i=i+1;
+        }
+        document.write('<br><br><br>')
+    </script>
+    </div>
+    <br><br><br><br><br><br>
+    <h3><a class="back_to_home" href="kdc_home.html"> KDC home </a></h3>
+    </div>
+    </div>
+</body>
+</html>

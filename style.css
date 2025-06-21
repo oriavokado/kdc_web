@@ -1,0 +1,121 @@
+h1 {
+        font-size: 60px;
+        text-align: center;
+        background-color: rgb(46, 75, 163);
+        padding: 55px;
+        margin: 0;
+        border-bottom: 2px solid white;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .back_to_home {
+        color: rgb(46, 75, 163); 
+        text-decoration: none;
+    }
+    .title {
+        color: white;
+        text-decoration: none;
+    }
+
+    .num {
+        color:black;
+        text-decoration: none;
+    }
+
+    #dir {
+        border-right: 1.5px solid rgb(103, 103, 103);
+        width: 180px;
+    }
+    #contents {
+        padding-top: 30px;
+        padding-left: 80px;
+        padding-right: 320px;
+    }
+
+    .inner_box {
+        background-color: rgb(242, 245, 253);
+        padding: 20px;
+         border-radius: 8px;
+}
+
+    #jogi_contents {
+        padding-top: 30px;
+        padding-right: 300px;
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+        gap: 60px;
+    }
+    #list_title {
+        list-style-type: none;
+        text-align: center;
+        background-color: rgb(46, 75, 163);
+        padding: 8px;
+        color: white;
+    }
+    .custom_list {
+        list-style: none;
+        padding-left: 60px;
+        
+    }
+    .custom_list li::before {
+        content: "- ";
+    }
+
+    .contents_list {
+        font-size: 18px;
+        font-weight: 500;
+        padding-left: 70px;
+    }
+
+    .first_title {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .jogi_title {
+        text-align: center;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+    #jogi {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px
+
+    }
+
+    #jogi_box {
+        background-color:rgb(242, 245, 253);
+        border-radius: 8px;
+    }
+
+    .comment {
+        color:rgb(46, 75, 163);
+        font-size: 18px;
+        font-weight: 500;
+    }
+    @media (max-width: 1300px) {
+        #dir {
+            display: none;
+        }
+        #contents {
+            padding-right: 80px;
+        }
+        #jogi_contents {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        #grid {
+         grid-template-columns: none;
+        }
+    }

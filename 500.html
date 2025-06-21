@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<title>KDC web - 기술과학 500</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><a class="title" href="kdc_home.html">KDC web</a></h1>
+    <div id="grid">
+    <div id="dir">
+        <div id="list_title"><strong>분류표</strong></div>
+        <ul class="custom_list">
+        <li><a class="num" href="000.html">000</a></li>
+        <li><a class="num" href="100.html">100</a></li>
+        <li><a class="num" href="200.html">200</a></li>
+        <li><a class="num" href="300.html">300</a></li>
+        <li><a class="num" href="400.html">400</a></li>
+        <li><a class="num" href="500.html"><strong>500</strong></a></li>
+        <li><a class="num" href="600.html">600</a></li>
+        <li><a class="num" href="700.html">700</a></li>
+        <li><a class="num" href="800.html">800</a></li>
+        <li><a class="num" href="900.html">900</a></li>
+        </ul>
+        <div id="list_title"><strong>조기표</strong></div>
+        <ul class="custom_list">
+        <li><a class="num" href="jogi.html">조기표</a></li>
+        </ul>
+    </div>
+
+    <div id="contents">
+    <br>
+    <h2 class="first_title">분류표</h2>
+    <br>
+    <div class="inner_box">
+    <h2 >기술과학 500</h2>
+    <br>
+    <script>
+        var i=1;
+        var name_list=['의학', '농업, 농학', '공학, 공업일반, 토목공학, 환경공학', '건축, 건축학', '기계공학', '전기공학, 통신공학, 전자공학', '화학공학', '제조업', '생활과학']
+        while (i<=name_list.length) {
+            if (i*10 ==40) {
+                document.write('<p class="contents_list">',5,i*10," ", name_list[i-1], "  ", '<input type="button" value="▶" onclick="commentHandler(this, comment_500)"><span class="comment"></span></p>');
+            }
+            else {
+                document.write('<p class="contents_list">',5,i*10," ", name_list[i-1], '</p>');
+            }
+            i=i+1;
+        }
+        document.write('<br><br><br>')
+    </script>
+    <script src="comment.js"></script>
+    </div>
+    <br><br><br><br><br><br>
+    <h3><a class="back_to_home" href="kdc_home.html"> KDC home </a></h3>
+    </div>
+    </div>
+</body>
+</html>
